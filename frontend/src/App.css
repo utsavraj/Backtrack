@@ -1,0 +1,342 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Baloo|Love+Ya+Like+A+Sister|Oswald|Roboto|Roboto+Condensed|Slabo+27px');
+
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js");
+
+.App {
+  text-align: center;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+.Avatar{ 
+  position: absolute;  
+  right: 0;  
+  margin-right: 40px;
+  font-size:30px;
+  font-family: 'Baloo';
+  color: purple;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.projectView{
+  margin:40px 40px 40px 40px;
+}
+
+
+div .header{
+  margin: auto;
+  padding: 5px;
+  overflow: auto;
+  border-bottom: 4px solid #428bca;
+  font-family: 'Slabo 27px', serif;
+}
+
+div .header .user{
+  width: 15%;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+div .header .user .logo{
+  width:50%;
+  float: center;
+}
+
+div .header .user:hover{
+  color: #428bca;
+  text-decoration: none;
+}
+
+div .header .logout{
+  width: 10%;
+  float: right;
+  line-height: 70px;
+}
+
+div .header .title{
+  margin: auto;
+  width:70%;
+  float: left;
+  font-size: 20px;
+  text-align: center;
+}
+
+div .friendlist {
+	float:left;
+	width:15%;
+	text-align: center;
+	border-right: 3px solid #428bca;
+	padding-right: 15px;
+	padding-top: 15px;
+}
+
+div .friendlist .title{
+  font-weight: bold;
+}
+
+.main{
+	width:70%;
+	min-height: 500px;
+	float: right;
+  padding: 20px;
+}
+
+section {
+  width: 80%;
+  border: 1px solid #0EBFE9;
+  padding:10px;
+}
+
+section input {
+	width: 100%;
+	outline: none;
+	font-size: 80%;
+	resize: vertical;
+	margin-bottom: 20px;
+	border: 1px solid #0EBFE9;
+	border-bottom: 1.5px solid #63D1F4;
+}
+
+.UserDetail{
+  width: 60%;
+  border: 1px solid #428bca;
+  padding:10px;
+}
+
+.UserDetail p{
+  font-family: 'Roboto+Condensed', serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.UserDetail img{
+  float: right;
+  width: 20%;
+  border-radius:10%
+}
+
+.UserDetail input{
+  padding:5px;
+  font-family: 'Oswald', serif;
+  font-size: 17px;
+  width: 40%;
+  height:20px;
+  margin-left: 20px;
+	outline: none;
+	font-size: 80%;
+	resize: vertical;
+	margin-bottom: 20px;
+	border: 1px solid #428bca;
+  border-bottom: 2px solid #428bca;
+  background: hsl(0, 0%, 98%);
+}
+
+section ul {
+	margin-top: 10px;
+	list-style: none;
+	padding-left: 0px;
+}
+
+section ul li {
+	padding: 5px 5px;
+  word-wrap: break-word;
+	border-bottom: 2px solid #63D1F4;
+}
+
+section ul li:hover {
+	border-bottom: 3px solid #00688B;
+}
+
+.postImg {
+  float: right;
+  width: 10%;
+}
+
+#friendStar{
+  font-size:15px;
+  color:#00688B;
+}
+
+.friend{
+  font-size:20px;
+}
+
+
+.login {
+	width:360px;
+	padding: 7% 0 0;
+	margin: auto;
+}
+
+#auth {
+  position: relative;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  padding-top: 25px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3), 0 5px 5px 0 rgba(0, 0, 0, 0.29);
+}
+
+#auth label{
+  font-family: 'Roboto';
+}
+
+#auth h2{
+  font-family: 'Slabo 27px', serif;
+  font-size: 35px;
+}
+
+#auth input {
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 16px;
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  background: hsl(0, 0%, 93%);
+  border: 0;
+  outline:none;
+}
+
+#auth p{
+  color: red;
+  font-size: 17px;
+}
+
+
+.myButton {
+  text-transform: uppercase;
+  outline: 0;
+  background:#428bca;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.4 ease;
+  transition: all 0.4 ease;
+  cursor: pointer;
+}
+
+
+.scrollbar {
+  margin-left: 30px;
+  float: left;
+  height: 200px;
+  width: 65px;
+  background: #fff;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+  }
+  .force-overflow {
+  min-height: 300px;
+  }
+  .scrollbar-primary::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5; }
+
+  .scrollbar-primary::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: rgb(46, 109, 211); }
+
+  .scrollbar-default::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px; }
+
+  .scrollbar-default::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5; }
+
+  .scrollbar-default::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #2BBBAD; }
+
+  .scrollbar-secondary::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px; }
+
+  .scrollbar-secondary::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5; }
+
+  .scrollbar-secondary::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #aa66cc; }
+
+  #subContainer {
+    /* border:1px solid rgb(194, 194, 194); */
+    /* border-radius: 20px; */
+    padding: 2%;
+    width: 100%;
+    height:85%;
+    overflow-y: auto;
+    position: relative;
+    /* scroll-behavior: smooth; */
+    height: 90%;
+    position: relative;
+    border: rgb(194, 194, 194) solid 3px; 
+    border-radius: 3px; 
+    margin:0
+}
