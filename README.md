@@ -1,4 +1,4 @@
-# <img src="frontend/public/backtrack.png" width="150" align="center" > Backtrack
+# <img src="frontend/public/backtrack.png" width="150" align="center" >
 BackTrack: A web-based collaboration tool for Scrum teams. Made for COMP3297 Software Engineering
 
 The short-term goals for BackTrack are to ease the creation, management and tracking of project backlogs –
