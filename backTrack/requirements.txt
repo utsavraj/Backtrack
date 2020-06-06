@@ -10,7 +10,7 @@ chardet==3.0.4
 constantly==15.1.0
 cryptography==2.8
 daphne==1.4.2
-Django==2.2.7
+Django==2.2.13
 django-access-tokens==0.9.2
 django-channels==0.7.0
 django-cors-headers==3.1.1
